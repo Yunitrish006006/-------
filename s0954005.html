@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>views</title>
+    <style type="text/css">
+        .id1{
+            width:120px;
+            height:120px;
+            border:4px solid rgb(37, 37, 189);
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function(){
+            document.getElementsByClassName("id1").style.backgroundColor="#F00";
+        }
+    </script>
+</head>
+<body>
+    <form method="POST" action="/cgi-www/viewed.sh">
+        <input type="text" value="id3">
+        <input type="submit" value="add view">
+    </form>
+    <div><h1 class="id1">test</h1></div>
+</body>
+</html>

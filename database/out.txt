@@ -1,0 +1,1244 @@
+[2023-01-03 16:57:54] [INFO    ] discord.client: logging in using static token
+[2023-01-03 16:58:06] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: b287d96c98a50d97dbd6d6bcbeec0aac).
+[2023-01-03 17:01:15] [ERROR   ] discord.ui.view: Ignoring exception in view <select_view timeout=180 children=1> for item <job_select placeholder='select your job' min_values=1 max_values=1 disabled=False options=[<SelectOption label='miner' value='miner' description='a career that can get lot of jeweris' emoji=<PartialEmoji animated=False name='⛏️' id=None> default=False>, <SelectOption label='farmer' value='farmer' description='a career that can grow foods' emoji=<PartialEmoji animated=False name='🥦' id=None> default=False>, <SelectOption label='smith' value='smith' description='a career that can make tools and weapons' emoji=<PartialEmoji animated=False name='⚒️' id=None> default=False>, <SelectOption label='hunter' value='hunter' description='a career that can get meats from nature' emoji=<PartialEmoji animated=False name='🏹' id=None> default=False>]>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/ui/view.py", line 425, in _scheduled_task
+    await item.callback(interaction)
+  File "/var/www/html/bot/rat.py", line 75, in callback
+    await interaction.response.send_message(f"{user.name} select {self.values[0]} as job",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:05:32] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:05:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:11:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:11:41] [WARNING ] discord.webhook.async_: Webhook ID 1059881748885934120 is rate limited. Retrying in 0.97 seconds.
+[2023-01-03 17:11:42] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-03 17:12:43] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:12:45] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 20:08:30] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session b287d96c98a50d97dbd6d6bcbeec0aac.
+[2023-01-03 21:41:14] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session b287d96c98a50d97dbd6d6bcbeec0aac.
+[2023-01-03 23:21:22] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session b287d96c98a50d97dbd6d6bcbeec0aac.
+[2023-01-04 00:41:13] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session b287d96c98a50d97dbd6d6bcbeec0aac.
+[2023-01-04 02:16:31] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '查詢機器人服務伺服器'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 133, in self
+    await i.response.send_message(f"{show}")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '查詢機器人服務伺服器' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:19:47] [WARNING ] discord.webhook.async_: Webhook ID 1060019660050935839 is rate limited. Retrying in 0.98 seconds.
+[2023-01-04 02:19:47] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:19:48] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:12] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 144, in self
+    await interaction.response.send_message(f"turing off rat .....")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:24] [WARNING ] discord.webhook.async_: Webhook ID 1060021099678671038 is rate limited. Retrying in 0.97 seconds.
+[2023-01-04 02:25:26] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 144, in self
+    await interaction.response.send_message(f"turing off rat .....")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-04 02:26:00] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:28:50] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+Traceback (most recent call last):
+  File "/var/www/html/bot/rat.py", line 166, in <module>
+    client.run(token)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 828, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 817, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 746, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 627, in connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              [2023-01-03 16:58:23] [WARNING ] discord.webhook.async_: Webhook ID 1059878383007313990 is rate limited. Retrying in 0.96 seconds.
+[2023-01-03 16:58:24] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-03 17:05:32] [WARNING ] discord.webhook.async_: Webhook ID 1059880180484685854 is rate limited. Retrying in 0.98 seconds.
+[2023-01-03 17:05:33] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:05:35] [WARNING ] discord.webhook.async_: Webhook ID 1059880215989461193 is rate limited. Retrying in 0.96 seconds.
+[2023-01-03 17:05:36] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-03 17:11:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:11:41] [WARNING ] discord.webhook.async_: Webhook ID 1059881727859884092 is rate limited. Retrying in 0.96 seconds.
+[2023-01-03 17:11:42] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:12:43] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:12:54] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 18:39:02] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-03 21:08:48] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-03 22:55:29] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-03 23:38:09] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-04 00:43:12] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-04 02:16:31] [WARNING ] discord.webhook.async_: Webhook ID 1060018839519240192 is rate limited. Retrying in 0.98 seconds.
+[2023-01-04 02:16:32] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '查詢機器人服務伺服器'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 133, in self
+    await i.response.send_message(f"{show}")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '查詢機器人服務伺服器' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:19:47] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 156, in self
+    await interaction.response.send_message(f"select your job",view=select_view(job_select()),ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:21:27] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 7c3ac490911d1dfa7bed9aea9cb03460.
+[2023-01-04 02:21:43] [ERROR   ] discord.ui.view: Ignoring exception in view <select_view timeout=180 children=1> for item <job_select placeholder='select your job' min_values=1 max_values=1 disabled=False options=[<SelectOption label='miner' value='miner' description='a career that can get lot of jeweris' emoji=<PartialEmoji animated=False name='⛏️' id=None> default=False>, <SelectOption label='farmer' value='farmer' description='a career that can grow foods' emoji=<PartialEmoji animated=False name='🥦' id=None> default=False>, <SelectOption label='smith' value='smith' description='a career that can make tools and weapons' emoji=<PartialEmoji animated=False name='⚒️' id=None> default=False>, <SelectOption label='hunter' value='hunter' description='a career that can get meats from nature' emoji=<PartialEmoji animated=False name='🏹' id=None> default=False>]>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/ui/view.py", line 425, in _scheduled_task
+    await item.callback(interaction)
+  File "/var/www/html/bot/rat.py", line 75, in callback
+    await interaction.response.send_message(f"{user.name} select {self.values[0]} as job",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:12] [WARNING ] discord.webhook.async_: Webhook ID 1060021025481433098 is rate limited. Retrying in 0.86 seconds.
+[2023-01-04 02:25:13] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 144, in self
+    await interaction.response.send_message(f"turing off rat .....")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:24] [WARNING ] discord.webhook.async_: Webhook ID 1060021099678671038 is rate limited. Retrying in 0.97 seconds.
+[2023-01-04 02:25:26] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 144, in self
+    await interaction.response.send_message(f"turing off rat .....")
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-04 02:26:00] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '工作'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 152, in self
+    await interaction.response.send_message(f"work,{user.name},100\n",ephemeral=True)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '工作' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:28:50] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+Traceback (most recent call last):
+  File "/var/www/html/bot/rat.py", line 166, in <module>
+    client.run(token)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 828, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 817, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 746, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 627, in connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
+k (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-04 02:28:50] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+Traceback (most recent call last):
+  File "/var/www/html/bot/rat.py", line 159, in <module>
+    async def self(interaction:discord.Interaction):
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 828, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 817, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 746, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 627, in connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
+ption='a career that can grow foods' emoji=<PartialEmoji animated=False name='🥦' id=None> default=False>, <SelectOption label='smith' value='smith' description='a career that can make tools and weapons' emoji=<PartialEmoji animated=False name='⚒️' id=None> default=False>, <SelectOption label='hunter' value='hunter' description='a career that can get meats from nature' emoji=<PartialEmoji animated=False name='🏹' id=None> default=False>]>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/ui/view.py", line 425, in _scheduled_task
+    await item.callback(interaction)
+  File "/var/www/html/bot/rat.py", line 73, in callback
+    with open("jobs.txt",'a') as job_file:
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:09:06] [ERROR   ] discord.ui.view: Ignoring exception in view <select_view timeout=180 children=1> for item <job_select placeholder='select your job' min_values=1 max_values=1 disabled=False options=[<SelectOption label='miner' value='miner' description='a career that can get lot of jeweris' emoji=<PartialEmoji animated=False name='⛏️' id=None> default=False>, <SelectOption label='farmer' value='farmer' description='a career that can grow foods' emoji=<PartialEmoji animated=False name='🥦' id=None> default=False>, <SelectOption label='smith' value='smith' description='a career that can make tools and weapons' emoji=<PartialEmoji animated=False name='⚒️' id=None> default=False>, <SelectOption label='hunter' value='hunter' description='a career that can get meats from nature' emoji=<PartialEmoji animated=False name='🏹' id=None> default=False>]>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/ui/view.py", line 425, in _scheduled_task
+    await item.callback(interaction)
+  File "/var/www/html/bot/rat.py", line 73, in callback
+    with open("jobs.txt",'a') as job_file:
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:10:57] [ERROR   ] discord.ui.view: Ignoring exception in view <select_view timeout=180 children=1> for item <job_select placeholder='select your job' min_values=1 max_values=1 disabled=False options=[<SelectOption label='miner' value='miner' description='a career that can get lot of jeweris' emoji=<PartialEmoji animated=False name='⛏️' id=None> default=False>, <SelectOption label='farmer' value='farmer' description='a career that can grow foods' emoji=<PartialEmoji animated=False name='🥦' id=None> default=False>, <SelectOption label='smith' value='smith' description='a career that can make tools and weapons' emoji=<PartialEmoji animated=False name='⚒️' id=None> default=False>, <SelectOption label='hunter' value='hunter' description='a career that can get meats from nature' emoji=<PartialEmoji animated=False name='🏹' id=None> default=False>]>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/ui/view.py", line 425, in _scheduled_task
+    await item.callback(interaction)
+  File "/var/www/html/bot/rat.py", line 73, in callback
+    with open("jobs.txt",'a') as job_file:
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:11:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 147, in self
+    @tree.command(name="工作",description="賺錢",guilds=guild_obj_list)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:11:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 147, in self
+    @tree.command(name="工作",description="賺錢",guilds=guild_obj_list)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-03 17:12:38] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-03 17:12:45] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-03 17:12:53] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-03 19:28:42] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 2063eb5c1dda20c0a48a8cfe28370cf3.
+[2023-01-03 19:54:20] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 2063eb5c1dda20c0a48a8cfe28370cf3.
+[2023-01-03 23:24:53] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 2063eb5c1dda20c0a48a8cfe28370cf3.
+[2023-01-04 01:18:58] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 2063eb5c1dda20c0a48a8cfe28370cf3.
+[2023-01-04 02:16:31] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '查詢機器人服務伺服器'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 131, in self
+    show = "⚙️\n"
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '查詢機器人服務伺服器' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-04 02:16:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-04 02:19:47] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 147, in self
+    @tree.command(name="工作",description="賺錢",guilds=guild_obj_list)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:19:47] [WARNING ] discord.webhook.async_: Webhook ID 1060019660050935839 is rate limited. Retrying in 0.97 seconds.
+[2023-01-04 02:19:48] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 147, in self
+    @tree.command(name="工作",description="賺錢",guilds=guild_obj_list)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:12] [WARNING ] discord.webhook.async_: Webhook ID 1060021025481433098 is rate limited. Retrying in 0.88 seconds.
+[2023-01-04 02:25:13] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 142, in self
+    async def self(interaction:discord.Interaction,password:str):
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:24] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 142, in self
+    async def self(interaction:discord.Interaction,password:str):
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:55] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-04 02:28:50] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+Traceback (most recent call last):
+  File "/var/www/html/bot/rat.py", line 157, in <module>
+    
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 828, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 817, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 746, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 627, in connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
+w/html/bot/rat.py", line 149, in self
+    user = interaction.user
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+⚙️[ Log System ]
+[2023/01/03 14:51:50] 🔴  🕌Lulu之比奇堡⛪
+[2023/01/03 14:51:50] 🟢  彰化師範大學
+[2023/01/03 14:51:50] 🔴  叭噗⎝(◕u◕)⎠罰站
+[2023/01/03 14:51:50] 🟢  三隻狗
+[2023/01/03 14:51:50] 🟢  無名氏
+[2023/01/03 14:51:50] 🔴  幻塔：凌仙閣
+[2023/01/03 14:51:50] 🟢  Yun 的伺服器
+[2023/01/03 14:51:50] Synchronizing 彰化師範大學.....
+[2023/01/03 14:51:50] Synchronizing 三隻狗.....
+[2023/01/03 14:51:50] Synchronizing 無名氏.....
+[2023/01/03 14:51:50] Synchronizing Yun 的伺服器.....
+[2023/01/03 14:51:51] GUILDS:
+[2023/01/03 14:51:51] 彰化師範大學
+[2023/01/03 14:51:51] 三隻狗
+[2023/01/03 14:51:51] 無名氏
+[2023/01/03 14:51:51] Yun 的伺服器
+[2023/01/03 14:51:51] logged in as RAT
+
+⚙️
+[621509367665000478] 🕌Lulu之比奇堡⛪
+[764126539041734679] 彰化師範大學
+[878566842145308702] 叭噗⎝(◕u◕)⎠罰站
+[1003642488826900551] 三隻狗
+[1006986600951058533] 無名氏
+[1014136127512395807] 幻塔：凌仙閣
+[1058639961500426320] Yun 的伺服器
+
+/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _[2023-01-03 17:12:45] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/[2023-01-03 17:12:53] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-03 19:03:58] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 85ceeb7f50803f4e3ac03e95c33626cd.
+[2023-01-03 19:23:40] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 85ceeb7f50803f4e3ac03e95c33626cd.
+[2023-01-03 19:39:09] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 85ceeb7f50803f4e3ac03e95c33626cd.
+[2023-01-03 22:41:54] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 85ceeb7f50803f4e3ac03e95c33626cd.
+[2023-01-04 00:10:29] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 85ceeb7f50803f4e3ac03e95c33626cd.
+[2023-01-04 02:16:31] [WARNING ] discord.webhook.async_: Webhook ID 1060018839519240192 is rate limited. Retrying in 0.98 seconds.
+[2023-01-04 02:16:32] [ERROR   ] discord.app_commands.tree: Ignoring exception in command '查詢機器人服務伺服器'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 130, in self
+    len(guilds)
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command '查詢機器人服務伺服器' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:16:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _[2023-01-04 02:16:35] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/[2023-01-04 02:16:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _[2023-01-04 02:16:44] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/[2023-01-04 02:19:47] [WARNING ] discord.webhook.async_: Webhook ID 1060019660050935839 is rate limited. Retrying in 0.98 seconds.
+[2023-01-04 02:19:47] [WARNING ] discord.webhook.async_: Webhook ID 1060019682222030949 is rate limited. Retrying in 0.97 seconds.
+[2023-01-04 02:19:48] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 150, in self
+    with open("database/works.txt",'a') as work_file:
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+[2023-01-04 02:19:48] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'job'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 150, in self
+    with open("database/works.txt",'a') as work_file:
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'job' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:12] [WARNING ] discord.webhook.async_: Webhook ID 1060021025481433098 is rate limited. Retrying in 0.86 seconds.
+[2023-01-04 02:25:13] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 145, in self
+    await client.close()
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 218, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 887, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 880, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'close' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2023-01-04 02:25:24] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 145, in self
+    await client.close[2023-01-04 02:25:26] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'close'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/commands.py", line 862, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/var/www/html/bot/rat.py", line 145, in self
+    await client.close()
+  File "/usr/local/lib/python3.9/dist-packages/discord/interactions.py", line 769, in send_message
+    await adapter.create_interaction_response(
+  File "/usr/local/lib/python3.9/dist-packages/discord/webhook/async_.py", line 220, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1242, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_comm[2023-01-04 02:25:55] [ERROR   ] discord.app_commands.tree: Ignoring exception in command tree
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1091, in wrapper
+    await self._call(interaction)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1221, in _call
+    command, options = self._get_app_command_options(data)
+  File "/usr/local/lib/python3.9/dist-packages/discord/app_commands/tree.py", line 1127, in _get_app_command_options
+    raise CommandNotFound(name, parents)
+discord.app_commands.errors.CommandNotFound: Application command '工作' not found
+[2023-01-04 02:28:49] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+⚙️[ Log System ]
+[2023/01/03 14:40:13] 🔴  🕌Lulu之比奇堡⛪
+[2023/01/03 14:40:13] 🟢  彰化師範大學
+[2023/01/03 14:40:13] 🔴  叭噗⎝(◕u◕)⎠罰站
+[2023/01/03 14:40:13] 🟢  三隻狗
+[2023/01/03 14:40:13] 🟢  無名氏
+[2023/01/03 14:40:13] 🔴  幻塔：凌仙閣
+[2023/01/03 14:40:13] 🟢  Yun 的伺服器
+[2023/01/03 14:40:13] Synchronizing 彰化師範大學.....
+[2023/01/03 14:40:13] Synchronizing 三隻狗.....
+[2023/01/03 14:40:14] Synchronizing 無名氏.....
+[2023/01/03 14:40:14] Synchronizing Yun 的伺服器.....
+[2023/01/03 14:40:14] GUILDS:
+[2023/01/03 14:40:14] 彰化師範大學
+[2023/01/03 14:40:14] 三隻狗
+[2023/01/03 14:40:14] 無名氏
+[2023/01/03 14:40:14] Yun 的伺服器
+[2023/01/03 14:40:14] logged in as RAT
+
+⚙️
+[621509367665000478] 🕌Lulu之比奇堡⛪
+[764126539041734679] 彰化師範大學
+[878566842145308702] 叭噗⎝(◕u◕)⎠罰站
+[1003642488826900551] 三隻狗
+[1006986600951058533] 無名氏
+[1014136127512395807] 幻塔：凌仙閣
+[1058639961500426320] Yun 的伺服器
+
+Traceback (most recent call last):
+  File "/var/www/html/bot/rat.py", line 159, in <module>
+    async def self(interaction:discord.Interaction):
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 828, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 817, in runner
+    await self.start(token, reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 746, in start
+    await self.connect(reconnect=reconnect)
+  File "/usr/local/lib/python3.9/dist-packages/discord/client.py", line 627, in connect
+    await self.ws.poll_event()
+  File "/usr/local/lib/python3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
+on3.9/dist-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4004
